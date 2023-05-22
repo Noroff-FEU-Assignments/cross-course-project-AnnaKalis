@@ -12,6 +12,10 @@ ul {
     list-style-type: none;
 }
 
+header li {
+    display: inline-block;
+}
+
 header, 
 header a {
     color: #0A0D0C;
@@ -68,4 +72,10 @@ footer a {
     color: #fff;
     background-color: #293940;
     border-radius: 3px;
+}
+
+.cart,
+.shipping-payment {
+    background-color: #F5F5F5;
+    color: #0A0D0C;
 }
