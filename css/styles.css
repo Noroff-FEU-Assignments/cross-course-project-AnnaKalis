@@ -1,6 +1,7 @@
+/* General styling - apply all pages */
 
 main { 
-    color: #000;
+    color: #0A0D0C;
 }
 
 a {
@@ -12,6 +13,7 @@ ul {
     list-style-type: none;
 }
 
+
 header li {
     display: inline-block;
 }
@@ -22,7 +24,11 @@ header a {
     background-color: #F5F5F5 ;
 }
 
-h1 {color: #0A0D0C;}
+.price {
+    font-weight: bold;
+ }
+
+/* Styling of homepage */
 
 footer,
 footer a {
@@ -34,19 +40,19 @@ footer a {
 .contact-info {
     color: #0A0D0C;
 }
- .price {
-    font-weight: bold;
- }
+
 
  .featured h1 {
     background-color: #F5F5F5;  
  }
- 
+/* Styling of single product page */
+
  .size,
  .filter {
     color: #293940;
     background-color: #F5F5F5;
 }
+/* Styling of about us page */
 
 .about-middle {
     color: #293940;
@@ -59,15 +65,21 @@ footer a {
     background-color: #F5F5F5;
 }
 
+/* Styling of contac us page */
+
 .social-media {
     color: #293940;
 }
+
+/* Styling of checkout successfull page */
 
 .payment-successfull {
     background-color: #F5F5F5;
     color: #0A0D0C;
     text-align: center;
 }
+
+/* Styling of checkout page */
 .cta { 
     color: #fff;
     background-color: #293940;
