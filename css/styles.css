@@ -1,0 +1,14 @@
+header {
+    color: #0A0D0C;
+    background-color: #F5F5F5 ;
+}
+
+header a {
+    color: #0A0D0C;
+    list-style-type: none; 
+}
+
+footer {
+    color: #293940 ;
+    background-color:  #F5F5F5;
+}
