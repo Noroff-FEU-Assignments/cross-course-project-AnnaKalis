@@ -1,14 +1,71 @@
-header {
+
+main { 
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #0A0D0C;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, 
+header a {
     color: #0A0D0C;
     background-color: #F5F5F5 ;
 }
 
-header a {
-    color: #0A0D0C;
-    list-style-type: none; 
-}
+h1 {color: #0A0D0C;}
 
-footer {
+footer,
+footer a {
     color: #293940 ;
     background-color:  #F5F5F5;
+}
+.welcome a,
+.follow,
+.contact-info {
+    color: #0A0D0C;
+}
+ .price {
+    font-weight: bold;
+ }
+
+ .featured h1 {
+    background-color: #F5F5F5;  
+ }
+ 
+ .size,
+ .filter {
+    color: #293940;
+    background-color: #F5F5F5;
+}
+
+.about-middle {
+    color: #293940;
+    text-align: center;
+}
+
+.about-up,
+.about-bottom,
+.contact {
+    background-color: #F5F5F5;
+}
+
+.social-media {
+    color: #293940;
+}
+
+.payment-successfull {
+    background-color: #F5F5F5;
+    color: #0A0D0C;
+    text-align: center;
+}
+.cta { 
+    color: #fff;
+    background-color: #293940;
+    border-radius: 3px;
 }
