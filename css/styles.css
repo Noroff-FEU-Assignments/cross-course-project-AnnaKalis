@@ -1,6 +1,8 @@
 /* General styling - apply all pages */
 
-main { 
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
     color: #0A0D0C;
 }
 
@@ -13,37 +15,70 @@ ul {
     list-style-type: none;
 }
 
+.price {
+    font-weight: bold;
+ }
+ 
+ h1 {
+    font-size: 1.95rem;
+    font-weight: 400;
+ }
+
+/* Header */
 
 header li {
     display: inline-block;
 }
 
-header, 
-header a {
-    color: #0A0D0C;
-    background-color: #F5F5F5 ;
+header {
+    background-color: #F5F5F5;
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
-.price {
-    font-weight: bold;
- }
-
-/* Styling of homepage */
+/* footer */
 
 footer,
 footer a {
     color: #293940 ;
     background-color:  #F5F5F5;
+    font-weight: 400;
+    font-size: 0.8rem;
 }
+
+.copyright {
+    font-family:'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Styling of homepage */
+
 .welcome a,
 .follow,
 .contact-info {
     color: #0A0D0C;
 }
+.welcome h1 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight:700;
+}
 
+.welcome p {
+    font-family:'Open Sans', sans-serif;
+    font-size: 1.95rem;
+    font-weight:700;
+}
 
+.welcome a {
+    font-size: 1.25rem;
+    font-variant-caps: small-caps;
+}
  .featured h1 {
-    background-color: #F5F5F5;  
+    background-color: #F5F5F5;
+    font-variant-caps: all-small-caps;
+    font-size: 1.56rem;  
  }
 /* Styling of single product page */
 
