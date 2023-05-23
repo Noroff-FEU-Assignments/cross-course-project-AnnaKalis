@@ -39,7 +39,21 @@
           <a href="tel:+4700050500">+4700050500</a>
           <p>Mountain street 24, 1200 Oslo</p>
         </div>
-        <div class="contact-form">form</div>
+
+        <!--Start contact form-->
+        <form action="form-contact.php" method="post">
+          <fieldset>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" class="form_input" required>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email"class="form_input" required>
+            <label for="name">message</label>
+            <input type="text" name="name" class="form_input_message">
+          </fieldset>
+          <input type="submit" value="send">
+        </form>
+        <!--End contact form-->
+      
       </section>
       <section class="follow">
         <p>Follow us</p>
