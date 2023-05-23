@@ -41,19 +41,17 @@
         </div>
 
         <!--Start contact form-->
-        <form action="form-contact.php" method="post">
+        <form method="post">
           <fieldset>
             <label for="name">name</label>
-            <input type="text" name="name" id="name" class="form_input" required>
+            <input type="text" name="name" id="name" required />
             <label for="email">email</label>
-            <input type="email" name="email" id="email"class="form_input" required>
-            <label for="name">message</label>
-            <input type="text" name="name" class="form_input_message">
+            <input type="email" name="email" id="email" required />
+            <textarea name="message" id="message">Message</textarea>
+            <input type="submit" value="Send" />
           </fieldset>
-          <input type="submit" value="send">
         </form>
         <!--End contact form-->
-      
       </section>
       <section class="follow">
         <p>Follow us</p>
