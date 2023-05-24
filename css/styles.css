@@ -26,8 +26,7 @@ ul {
 
 /* Header */
 
-nav, 
-nav li {
+nav {
     display: inline-block;
 }
 header {
