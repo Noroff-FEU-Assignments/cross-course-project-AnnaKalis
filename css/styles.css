@@ -26,14 +26,19 @@ ul {
 
 /* Header */
 
-header li {
+nav, 
+nav li {
     display: inline-block;
 }
-
 header {
     background-color: #F5F5F5;
     font-weight: 300;
     font-size: 1.25rem;
+    
+}
+.current { 
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 /* footer */
