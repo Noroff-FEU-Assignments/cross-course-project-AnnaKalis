@@ -38,8 +38,35 @@
           <a href="jackets.html" class="cta">Continue shopping</a>
         </div>
         <div class="shipping-payment">
-          <h1>Shipping adress</h1>
-          <h1>Payment method</h1>
+          <form method="post">
+            <fieldset>
+              <legend>Shipping adress</legend>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="adress">Street adress</label>
+              <input type="text" name="adress" id="adress" />
+              <label for="post code">Post code</label>
+              <input type="text" name="post code" id="post code" />
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" />
+            </fieldset>
+            <fieldset>
+              <legend>Payment method</legend>
+              <input type="radio" name="payment" id="visa" value="visa" />
+              <label for="visa">Visa</label>
+              <input type="radio" name="payment" id="master card" value="master card" />
+              <label for="master card">Master card</label>
+              <input type="radio" name="payment" id="pay pal" value="pay pal" />
+              <label for="pay pal">Pay pal</label>
+              <input type="radio" name="payment" id="klarna" value="klarna" />
+              <label for="klarna">klarna</label>
+            </fieldset>
+            <input type="submit" value="Pay now" class="cta">
+          </form>
+
+        
           <a href="checkoutsuccesfull.html" class="cta">Pay now</a>
         </div>
       </section>
