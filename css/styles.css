@@ -25,7 +25,11 @@ ul {
  }
 
 /* Header */
-
+.logo-header { 
+    height: 67px;
+    width: 159px;
+    
+}
 nav {
     display: inline-block;
 }
@@ -40,8 +44,14 @@ header {
     text-decoration: underline;
 }
 
+
 /* footer */
 
+.logo-footer { 
+    height: 81px;
+    width: 144px;
+    
+}
 footer,
 footer a {
     color: #293940 ;
@@ -55,6 +65,7 @@ footer a {
     font-style: italic;
     font-weight: 300;
 }
+
 
 /* Styling of homepage */
 
