@@ -4,6 +4,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color: #0A0D0C;
+    
 }
 
 a {
@@ -25,18 +26,26 @@ ul {
  }
 
 /* Header */
+
 .logo-header { 
     height: 67px;
     width: 159px;
+    padding: 30px;
     
 }
 nav {
-    display: inline-block;
+    display: inline-block;   
 }
+
 header {
     background-color: #F5F5F5;
     font-weight: 300;
     font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 118px;
+    padding-right: 148px;
     
 }
 .current { 
@@ -46,6 +55,7 @@ header {
 
 
 /* footer */
+
 
 .logo-footer { 
     height: 81px;
@@ -90,15 +100,30 @@ footer a {
     font-size: 1.25rem;
     font-variant-caps: small-caps;
 }
- .featured h1 {
+ .featured h2 {
     background-color: #F5F5F5;
     font-variant-caps: all-small-caps;
-    font-size: 1.56rem;  
+    font-size: 1.56rem;
  }
 
  .featured-image {
     background-color: #F5F5F5;
  }
+
+ .grid-col-span-3 {
+    grid-column: span 3;
+ }
+ .featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em 5em;
+ }
+ 
+ .product img {
+    padding: 3rem;
+    
+ }
+
 
 /* Styling of jackets page */
 
