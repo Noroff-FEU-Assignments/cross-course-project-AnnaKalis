@@ -95,6 +95,17 @@ footer a {
     font-variant-caps: all-small-caps;
     font-size: 1.56rem;  
  }
+
+ .featured-image {
+    background-color: #F5F5F5;
+ }
+
+/* Styling of jackets page */
+
+.filter li {
+    display: inline-block;
+}
+
 /* Styling of single product page */
 
  .size,
