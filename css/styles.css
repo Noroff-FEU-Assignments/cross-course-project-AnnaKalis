@@ -34,20 +34,22 @@ ul {
     
 }
 nav {
-    display: inline-block;   
+    display: block;
+    justify-self: end; 
+    align-self: center;
+}
+nav a {
+    padding: 30px;
 }
 
 header {
     background-color: #F5F5F5;
     font-weight: 300;
     font-size: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 118px;
-    padding-right: 148px;
-    
+    display: grid;
+    grid-template-columns: repeat(2, auto);
 }
+
 .current { 
     font-weight: 500;
     text-decoration: underline;
