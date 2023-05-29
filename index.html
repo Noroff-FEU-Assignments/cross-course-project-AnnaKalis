@@ -20,8 +20,8 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img src="images/logo/RainyDays_logo.svg" alt="RainyDays logo" class="logo-header"
+      <a clss="logo-header" href="index.html"
+        ><img src="images/logo/RainyDays_logo.svg" alt="RainyDays logo" class="logo-header-image"
       /></a>
       <nav role="navigation">
         <a href="index.html" class="current">Home</a>
@@ -35,13 +35,14 @@
     </header>
     <main>
       <section class="welcome">
-        <div>
+        <div class="welcome-buy-now">
           <h1>Pushing the Comfort Zone</h1>
           <p>Jackets for all types of weather</p>
           <a href="jackets.html">Buy now</a>
         </div>
-        <a href="jackets.html">Women's jackets</a>
-        <a href="jackets.html">Men's jackets</a>
+        <div class="welcome-womens">
+        <a href="jackets.html">Women's jackets</a></div>
+        <div class="welcome-mens"><a href="jackets.html">Men's jackets</a></div>
       </section>
       <section class="featured">
         <h2 class="grid-col-span-3">Most popular</h2>
@@ -66,14 +67,13 @@
       <a href="index.html"
         ><img src="images/logo/RainyDays_logoText.svg" alt="RainyDays logo" class="logo-footer"
       /></a>
-      <p class="copyright">&copy; 2023 Anna Kalis CA</p>
-      <ul>
+      <ul class="ul-left">
         <li>RainyDays</li>
         <li><a href="about.html">About us</a></li>
         <li><a href="contact.html">Contact us</a></li>
         <li>Work at RainyDays</li>
       </ul>
-      <ul>
+      <ul class="ul-right">
         <li>Customer service</li>
         <li>Terms and conditions</li>
         <li>Shipping and delivery</li>
@@ -81,9 +81,12 @@
         <li>FAQ</li>
         <li>Product warranty</li>
       </ul>
-      <img src="images/icons/Instagram.svg" alt="Instagram" />
-      <img src="images/icons/Facebook.svg" alt="Facebook" />
-      <img src="images/icons/Pinterest.svg" alt="Pinterest" />
+      <div>
+        <img src="images/icons/Instagram.svg" alt="Instagram" />
+        <img src="images/icons/Facebook.svg" alt="Facebook" />
+        <img src="images/icons/Pinterest.svg" alt="Pinterest" />
+      </div>
+      <p class="copyright">&copy; 2023 Anna Kalis CA</p>
     </footer>
   </body>
 </html>

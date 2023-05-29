@@ -1,12 +1,22 @@
-/* General styling - apply all pages */
+/* General styling - apply all pages 
+-------------------------------------------------------------------*/
+/* * {
+    outline: 1px solid #f00 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  } */
+ 
 
 body {
     font-family: 'Noto Sans', sans-serif;
     font-size: 1rem;
     color: #0A0D0C;
+    margin: 0px;
     
 }
-
+main {
+    padding-top: 180px;
+}
 a {
     text-decoration: none;
     color: #0A0D0C;
@@ -25,21 +35,28 @@ ul {
     font-weight: 400;
  }
 
-/* Header */
+/* Header 
+-------------------------------------------------------------------*/
 
-.logo-header { 
+.logo-header-image {
+    display: inline-block;
     height: 67px;
     width: 159px;
-    padding: 30px;
-    
+    padding: 40px;
+   
 }
+
+.logo-header {
+    grid-column: 1 / 2;
+} 
 nav {
-    display: block;
+    grid-column: 2 / 3;
     justify-self: end; 
     align-self: center;
 }
 nav a {
-    padding: 20px;
+    display: inline-block;
+    padding: 30px;
     margin: 10px;
     
 }
@@ -50,6 +67,9 @@ header {
     font-size: 1.25rem;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .current { 
@@ -58,8 +78,8 @@ header {
 }
 
 
-/* footer */
-
+/* footer 
+-------------------------------------------------------------------*/
 
 .logo-footer { 
     height: 81px;
@@ -74,6 +94,48 @@ footer a {
     font-size: 0.8rem;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+footer a {
+    grid-column: 1 / 2 ;
+}
+
+footer div img {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+footer div {
+    grid-column: 4 / 5;
+    justify-self: end;
+}
+.ul-left{
+    grid-column: 2 / 3;
+    justify-self: right;
+    padding-right: 30px;
+}
+
+.ul-right {
+    grid-column: 3 / 4;
+}
+
+.ul-left li,
+.ul-right li {
+    display: block;
+}
+
+.ul-left li:first-of-type,
+.ul-right li:first-of-type
+ {
+    font-weight: 700;
+    padding-bottom: 0.7rem;
+}
+
 .copyright {
     font-family:'Open Sans', sans-serif;
     font-style: italic;
@@ -81,7 +143,8 @@ footer a {
 }
 
 
-/* Styling of homepage */
+/* Styling of homepage 
+-------------------------------------------------------------------*/
 
 .welcome a,
 .follow,
@@ -105,6 +168,7 @@ footer a {
 }
 
 .welcome a {
+    display: inline-block;
     font-size: 1.25rem;
     font-variant-caps: small-caps;
     background-color: #fff;
@@ -113,15 +177,30 @@ footer a {
     padding: 10px 40px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.welcome div {
-    background-image: url(../images/pictures/homepage-man-on-mountain.jpg);
-    min-height: 645px;
-    background-repeat: no-repeat;
-    align-items: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
+
+.welcome {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
- .featured h2 {
+.welcome-buy-now {
+    display: inline-block;
+    grid-column: 1 / 3;
+    background-image: url(../images/pictures/homepage-man-on-mountain.jpg);
+    border-radius: 5px;
+    width:100%;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+}
+
+.welcome-womens {
+    grid-column: 1 / 2 ;
+}
+.welcome a, 
+.featured h2 {
     background-color: #F5F5F5;
     font-variant-caps: all-small-caps;
     font-size: 1.56rem;
@@ -138,28 +217,31 @@ footer a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5em 5em;
+    padding: 30px;
  }
  
  .product img {
     padding: 3rem;
-    
  }
 
 
-/* Styling of jackets page */
+/* Styling of jackets page 
+-------------------------------------------------------------------*/
 
 .filter li {
     display: inline-block;
 }
 
-/* Styling of single product page */
+/* Styling of single product page 
+-------------------------------------------------------------------*/
 
  .size,
  .filter {
     color: #293940;
     background-color: #F5F5F5;
 }
-/* Styling of about us page */
+/* Styling of about us page 
+-------------------------------------------------------------------*/
 
 .about-middle {
     color: #293940;
@@ -172,7 +254,8 @@ footer a {
     background-color: #F5F5F5;
 }
 
-/* Styling of contac us page */
+/* Styling of contac us page 
+-------------------------------------------------------------------*/
 
 .contact-main {
     display: grid;
@@ -180,9 +263,8 @@ footer a {
     gap: 25px;
 }
 
-.contact-main img {
+.contact-main-image {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 
 .contact-main h1 {
@@ -192,20 +274,23 @@ footer a {
 .follow {
     grid-column: -3 / -1;
     justify-self: center;
+    text-align: center;
 }
 
 .follow p {
     justify-self: center;
 }
 .social-media img {
+    display: inline-block;
+    text-align: center;
     padding:10px;
     padding:5px;
     margin: 5px;
 }
   
 
-
-/* Styling of checkout successfull page */
+/* Styling of checkout successfull page 
+-------------------------------------------------------------------*/
 
 .payment-successfull {
     background-color: #F5F5F5;
@@ -213,7 +298,9 @@ footer a {
     text-align: center;
 }
 
-/* Styling of checkout page */
+/* Styling of checkout page 
+-------------------------------------------------------------------*/
+
 .cta { 
     color: #fff;
     background-color: #293940;
@@ -225,3 +312,6 @@ footer a {
     background-color: #F5F5F5;
     color: #0A0D0C;
 }
+
+/* Media Queries 
+-------------------------------------------------------------------*/
