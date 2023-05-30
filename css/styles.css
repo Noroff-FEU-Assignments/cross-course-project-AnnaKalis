@@ -1,11 +1,5 @@
 /* General styling - apply all pages 
 -------------------------------------------------------------------*/
-/* * {
-    outline: 1px solid #f00 !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-  } */
- 
 
 body {
     font-family: 'Noto Sans', sans-serif;
@@ -42,7 +36,7 @@ ul {
     display: inline-block;
     height: 67px;
     width: 159px;
-    padding: 40px;
+    padding: 20px 40px;
    
 }
 
@@ -84,6 +78,7 @@ header {
 .logo-footer { 
     height: 81px;
     width: 144px;
+    padding-left: 35px;
     
 }
 footer,
@@ -108,14 +103,17 @@ footer div img {
     padding: 5px;
     margin: 5px;
 }
+
 footer div {
     grid-column: 4 / 5;
     justify-self: end;
+    padding-right: 35px;
 }
 .ul-left{
     grid-column: 2 / 3;
     justify-self: right;
     padding-right: 30px;
+
 }
 
 .ul-right {
@@ -138,6 +136,7 @@ footer div {
     font-family:'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 300;
+    padding-left: 40px;
 }
 
 
@@ -197,25 +196,25 @@ footer div {
 .welcome-womens {
     grid-column: 1 / 2 ;
 }
-.welcome a, 
+
 .featured h2 {
+    display: inline-block;
     background-color: #F5F5F5;
     font-variant-caps: all-small-caps;
-    font-size: 1.56rem;
+    font-size: 1.8rem;
  }
 
- .featured-image {
+ .product-image {
     background-color: #F5F5F5;
  }
 
- .grid-col-span-3 {
-    grid-column: span 3;
- }
- .featured {
+ .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em 5em;
-    padding: 30px;
+    gap: 1.5em;
+    width: 100%;
+    justify-items: center;
+    align-items: end;
  }
  
  .product img {
@@ -229,6 +228,8 @@ footer div {
 .filter li {
     display: inline-block;
 }
+
+
 
 /* Styling of single product page 
 -------------------------------------------------------------------*/
@@ -313,3 +314,9 @@ footer div {
 
 /* Media Queries 
 -------------------------------------------------------------------*/
+@media (max-width: 800px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+}
