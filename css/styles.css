@@ -98,8 +98,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 footer a {
     grid-column: 1 / 2 ;
