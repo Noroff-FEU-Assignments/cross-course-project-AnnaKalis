@@ -10,6 +10,8 @@ body {
 }
 main {
     padding-top: 180px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -154,6 +156,7 @@ footer div {
     font-weight:700;
     color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .welcome p {
@@ -162,6 +165,7 @@ footer div {
     font-weight:700;
     color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .welcome a {
@@ -171,7 +175,6 @@ footer div {
     background-color: #fff;
     border-radius: 5px;
     background-color: #fff;
-    padding: 10px 40px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -179,22 +182,55 @@ footer div {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    position: relative;
 }
 .welcome-buy-now {
     display: inline-block;
     grid-column: 1 / 3;
-    background-image: url(../images/pictures/homepage-man-on-mountain.jpg);
+    background-image: linear-gradient(180.08deg, #293940 0.07%, rgba(41, 57, 64, 0) 71.88%), url(../images/pictures/homepage-man-on-mountain.jpg);
     border-radius: 5px;
     width:100%;
-    min-height: 650px;
+    min-height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+}
+
+.welcome-buy-now-cta {
+    position: absolute;
+    top: 300px;
+    padding: 15px 80px;
+    font-weight: 800;
 }
 
 .welcome-womens {
-    grid-column: 1 / 2 ;
+    background-image: url(../images/pictures/homepage-woman-in-yellow-jacket.jpg);
+    min-height: 600px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.welcome-mens {
+    background-image: url(../images/pictures/homepage-man-jumping-in-the-rain.jpg);
+    min-height: 600px;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.welcome-womens-mens-cta {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 40px;
 }
 
 .featured h2 {
@@ -202,23 +238,26 @@ footer div {
     background-color: #F5F5F5;
     font-variant-caps: all-small-caps;
     font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
  }
 
- .product-image {
-    background-color: #F5F5F5;
- }
 
  .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5em;
+    gap: 2rem;
     width: 100%;
     justify-items: center;
     align-items: end;
+    margin-bottom: 50px;
  }
  
  .product img {
+    background-color: #F5F5F5;
     padding: 3rem;
+    height: 300px;
+    object-fit: cover;
  }
 
 
@@ -227,35 +266,96 @@ footer div {
 
 .filter li {
     display: inline-block;
+    padding: 7px 30px;
+    margin-right: 10px;
+    color: #293940;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    border: 1px solid #C1D2D9;
+
 }
 
+.filter ul {
+    padding:0;
+}
 
 
 /* Styling of single product page 
 -------------------------------------------------------------------*/
 
- .size,
- .filter {
+ .size {
     color: #293940;
     background-color: #F5F5F5;
 }
 /* Styling of about us page 
 -------------------------------------------------------------------*/
+.about-up,
+.about-bottom {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 20px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.about-text {
+    align-self: top;
+    padding: 50px;
+    line-height: 21px;
+    background-color: #F5F5F5;
+}
+
+.about-text h2 {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+
+.about-text p {
+    font-weight: 300;  
+}
+
+.about-up img,
+.about-bottom img {
+    width: 100%; 
+    object-fit: cover;
+}
+
+.about-up-citat {
+    display: block;
+    background-color: #F5F5F5;
+    padding: 25px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center; 
+    position: absolute;
+    bottom: 40px;
+    margin: 0 20px;
+    border-radius: 5px;
+    
+}
 
 .about-middle {
     color: #293940;
+    display: block;
+    padding: 40px 100px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 31.25px;
+    line-height: 43px;
     text-align: center;
 }
 
-.about-up,
-.about-bottom,
-.contact {
-    background-color: #F5F5F5;
-}
 
 /* Styling of contac us page 
 -------------------------------------------------------------------*/
 
+
+.contact {
+    background-color: #F5F5F5;
+}
 .contact-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
