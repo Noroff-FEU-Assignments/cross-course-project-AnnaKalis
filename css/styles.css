@@ -532,7 +532,12 @@ footer div {
     .logo-header {
         grid-column: 2 / 3;
         justify-self: end;
-        padding-right: 20px;
+    }
+
+    .logo-header-image {
+        height: 46px;
+        width: 110px;
+        padding:10px 20px 0;
     }
 
     
