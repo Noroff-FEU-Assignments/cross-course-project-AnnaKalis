@@ -31,6 +31,10 @@ ul {
     font-weight: 400;
  }
 
+ .back-to-top {
+    display: none;
+ }
+
 /* Header 
 -------------------------------------------------------------------*/
 
@@ -79,7 +83,7 @@ header {
 }
 
 
-/* footer 
+/* Footer 
 -------------------------------------------------------------------*/
 
 .logo-footer { 
@@ -159,6 +163,7 @@ footer div {
     font-family:'Open Sans', sans-serif;
     font-size: 3rem;
     font-weight:700;
+    padding-top: 20px;
     color: #fff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
@@ -206,14 +211,15 @@ footer div {
 
 .welcome-buy-now-cta {
     position: absolute;
-    top: 300px;
+    bottom: 100px;
+    right: 100px;
     padding: 15px 80px;
     font-weight: 800;
 }
 
 .welcome-womens {
     background-image: url(../images/pictures/homepage-woman-in-yellow-jacket.jpg);
-    min-height: 600px;
+    min-height: 550px;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -223,7 +229,7 @@ footer div {
 
 .welcome-mens {
     background-image: url(../images/pictures/homepage-man-jumping-in-the-rain.jpg);
-    min-height: 600px;
+    min-height: 550px;
     width:100%;
     background-position: center;
     background-size: cover;
@@ -419,6 +425,18 @@ footer div {
 
 /* Media Queries 
 -------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .welcome-womens,
+    .welcome-mens {
+        min-height: 450px;
+    }
+}
+
+
 @media (max-width: 950px) { 
     main {
         width:80%;
@@ -458,7 +476,6 @@ footer div {
 }
 
 
-
 @media (max-width: 800px) {
     
     main {
@@ -490,6 +507,11 @@ footer div {
 
     .welcome p {
         font-size: 1.2rem;
+    }
+    
+    .welcome-womens,
+    .welcome-mens {
+        min-height: 400px;
     }
 
 
@@ -524,7 +546,6 @@ footer div {
         padding: 20px;  
     }
 
-
     header {
         grid-template-columns: repeat(2, auto);
     }
@@ -540,12 +561,18 @@ footer div {
         padding:10px 20px 0;
     }
 
-    
+    .welcome-buy-now-cta {
+        padding: 10px 50px;
+    }
 
+    .back-to-top {
+        display: block;
+        text-align: center;
+        color: #293940;
+    }
 
-
-
-
-
+    .back-to-top img {
+        height: 40px;
+    }
 
 }
