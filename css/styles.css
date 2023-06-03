@@ -9,8 +9,8 @@ body {
     
 }
 main {
-    padding-top: 180px;
-    max-width: 1200px;
+    padding-top: 150px;
+    width:70%;
     margin: 0 auto;
 }
 a {
@@ -55,6 +55,11 @@ nav a {
     padding: 30px;
     margin: 10px;
     
+}
+
+#menu-checkbox,
+.hamburger-icon {
+    display: none;
 }
 
 header {
@@ -414,9 +419,128 @@ footer div {
 
 /* Media Queries 
 -------------------------------------------------------------------*/
+@media (max-width: 950px) { 
+    main {
+        width:80%;
+        padding-top: 155px;
+    }
+    
+    header {
+        grid-template-columns: repeat(1, auto);
+        font-size: 1rem;
+    }
+    .logo-header {
+        grid-column: 1 / 2;
+        justify-self: center;
+    }
+    
+    .logo-header-image {
+        height: 46px;
+        width: 110px;
+        padding:10px 10px 0;
+    }
+
+    nav {
+        grid-column: 1 / 2;
+        justify-self: center; 
+    }
+    
+    nav a {
+        padding: 10px 30px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+}
+
+
+
 @media (max-width: 800px) {
+    
+    main {
+        width:80%;
+        padding-top: 155px;
+    }
+
+    footer div img {
+        display: block;
+        padding: 5px;
+        margin: 5px;
+    }
+
     .products {
         grid-template-columns: 1fr;
     }
+
+    .welcome {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-buy-now {
+        grid-column: 1 / 2;
+        
+}
+    .welcome h1 {
+    font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+
+    main {
+        width: 90%;
+        padding-top: 100px;
+    }
+    
+    footer {
+        display: none;
+    }
+
+    nav {
+        display:none;
+        
+    }
+
+    #menu-checkbox:checked ~ nav {
+        display: block;
+    }
+
+    nav a {
+        display:block;
+    }
+
+    .hamburger-icon {
+        display:inline-block;
+        padding: 20px;  
+    }
+
+
+    header {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .logo-header {
+        grid-column: 2 / 3;
+        justify-self: end;
+        padding-right: 20px;
+    }
+
+    
+
+
+
+
+
+
 
 }
