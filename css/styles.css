@@ -451,22 +451,49 @@ footer div {
     color: #0A0D0C;
     display:grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 20px;
     margin-bottom: 50px;
+    padding: 20px;
 }
 
+.checkout fieldset {
+    margin-bottom: 30px;
+}
 .cart {
     grid-row: 1 / 3;
 }
 
+.shipping-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.shipping-fields-adress {
+    grid-column: 1 / 3;
+}
+.shipping input {
+    width: 100%;
+}
 .shipping label {
     display: block;
+}
+
+.payment-method div {
+    display: inline-block;
 }
 
 
 /* Styling of checkout successfull page 
 -------------------------------------------------------------------*/
+.checkout-succesfull-body {
+    background-image: url(../images/pictures/Checkout-successfull-Snowboarders.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-.payment-successfull {
+.checkout-succesfull-main {
     background-color: #F5F5F5;
     color: #0A0D0C;
     text-align: center;
