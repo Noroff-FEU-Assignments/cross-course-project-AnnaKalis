@@ -38,72 +38,110 @@
     <main>
       <h1>Checkout</h1>
       <section class="checkout">
-        <form method="post" class="cart">
-          <fieldset>
-            <legend>Shopping cart</legend>
+        <div class="cart">
+          <h2>Shopping cart</h2>
+          <div class="cart-single-product">
+            <img src="images/products/stavanger.PNG" alt="Grey wind jacket" />
             <div>
               <p>Stavanger jacket</p>
-              <p class="price">55,00 EUR</p>
-              <img src="images/products/stavanger.PNG" alt="Grey wind jacket" />
+              <p>Size: M</p>
             </div>
-            <div></div>
-            <div></div>
-          </fieldset>
-          <a href="jackets.html" class="cta">Continue shopping</a>
-        </form>
+            <p class="price" class="price-shopping-cart">55,00 EUR</p>
+            <div class="adjust-products">
+              <img src="images/icons/Minus.svg" alt="Remove product" />
+              <p>1</p>
+              <img src="images/icons/Plus.svg" alt="Add product" />
+            </div>
+            <div class="trash">
+              <img src="images/icons/Trash.svg" alt="Remove product from shopping cart" />
+            </div>
+          </div>
+          <div class="cart-single-product">
+            <img src="images/products/stavanger.PNG" alt="Grey wind jacket" />
+            <div>
+              <p>Stavanger jacket</p>
+              <p>Size: M</p>
+            </div>
+            <p class="price" class="price-shopping-cart">55,00 EUR</p>
+            <div class="adjust-products">
+              <img src="images/icons/Minus.svg" alt="Remove product" />
+              <p>2</p>
+              <img src="images/icons/Plus.svg" alt="Add product" />
+            </div>
+            <div class="trash">
+              <img src="images/icons/Trash.svg" alt="Remove product from shopping cart" />
+            </div>
+          </div><div class="cart-single-product">
+            <img src="images/products/stavanger.PNG" alt="Grey wind jacket" />
+            <div>
+              <p>Stavanger jacket</p>
+              <p>Size: L</p>
+            </div>
+            <p class="price" class="price-shopping-cart">55,00 EUR</p>
+            <div class="adjust-products">
+              <img src="images/icons/Minus.svg" alt="Remove product" />
+              <p>1</p>
+              <img src="images/icons/Plus.svg" alt="Add product" />
+            </div>
+            <div class="trash">
+              <img src="images/icons/Trash.svg" alt="Remove product from shopping cart" />
+            </div>
+          </div>
+          <p class="price">Total 165,00 EUR</p>
+          <div></div>
+          <div></div>
+        </div>
 
         <form method="post" class="shipping">
-          <fieldset>
-            <legend>Shipping adress</legend>
-            <div class="shipping-fields">
-              <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-              </div>
-              <div class="shipping-fields-adress">
-                <label for="adress">Street adress</label>
-                <input type="text" name="adress" id="adress" />
-              </div>
-              <div>
-                <label for="post code">Post code</label>
-                <input type="text" name="post code" id="post code" />
-              </div>
-              <div>
-                <label for="city">City</label>
-                <input type="text" name="city" id="city" />
-              </div>
+          <h2>Shipping adress</h2>
+          <div class="shipping-fields">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
             </div>
-          </fieldset>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="shipping-fields-adress">
+              <label for="adress">Street adress</label>
+              <input type="text" name="adress" id="adress" />
+            </div>
+            <div>
+              <label for="post code">Post code</label>
+              <input type="text" name="post code" id="post code" />
+            </div>
+            <div>
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" />
+            </div>
+          </div>
         </form>
 
         <form method="post" class="payment">
-          <fieldset>
-            <legend>Payment method</legend>
-            <div class="payment-method">
-              <div>
-                <input type="radio" name="payment" id="visa" value="visa" />
-                <label for="visa"><img src="images/icons/Visa.png" alt="Visa" /></label>
-              </div>
-              <div>
-                <input type="radio" name="payment" id="master card" value="master card" />
-                <label for="master card"><img src="images/icons/MasterCard.png" alt="Master Card" /></label>
-              </div>
-              <div>
-                <input type="radio" name="payment" id="paypal" value="paypal" />
-                <label for="paypal"><img src="images/icons/PayPal.png" alt="PayPal" /></label>
-              </div>
-              <div>
-                <input type="radio" name="payment" id="payu" value="payu" />
-                <label for="payu"><img src="images/icons/PayU.png" alt="PayU" /></label>
-              </div>
+          <h2>Payment method</h2>
+          <div class="payment-method">
+            <div>
+              <input type="radio" name="payment" id="visa" value="visa" />
+              <label for="visa"><img src="images/icons/Visa.png" alt="Visa" /></label>
             </div>
-          </fieldset>
-          <a href="checkoutsuccesfull.html" class="cta">Pay now</a>
+            <div>
+              <input type="radio" name="payment" id="master card" value="master card" />
+              <label for="master card"><img src="images/icons/MasterCard.png" alt="Master Card" /></label>
+            </div>
+            <div>
+              <input type="radio" name="payment" id="paypal" value="paypal" />
+              <label for="paypal"><img src="images/icons/PayPal.png" alt="PayPal" /></label>
+            </div>
+            <div>
+              <input type="radio" name="payment" id="payu" value="payu" />
+              <label for="payu"><img src="images/icons/PayU.png" alt="PayU" /></label>
+            </div>
+          </div>
         </form>
+
+        <a href="jackets.html" class="cta">Continue shopping</a>
+        <a href="checkoutsuccesfull.html" class="cta" clas>Pay now</a>
       </section>
 
       <a href="#" class="back-to-top"
