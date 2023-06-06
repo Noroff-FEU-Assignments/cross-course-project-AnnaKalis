@@ -270,8 +270,8 @@ footer div {
  .product img {
     background-color: #F5F5F5;
     padding: 3rem;
-    height: 310px;
-    width: 290px;
+    height: 280px;
+    width: 70%;
     object-fit: fill;
  }
 
