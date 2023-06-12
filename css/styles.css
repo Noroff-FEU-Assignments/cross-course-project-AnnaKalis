@@ -407,8 +407,8 @@ footer div {
 .contact-main {
     background-image: url(../images/pictures/contact-man-looking-on-mountains.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    object-fit: cover;
 }
 
 .contact {
@@ -554,8 +554,8 @@ footer div {
 .checkout-succesfull-body {
     background-image: url(../images/pictures/Checkout-successfull-Snowboarders.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    object-fit: cover;
 }
 
 .checkout-succesfull {
