@@ -544,8 +544,18 @@ footer div {
     display: block;
 }
 
-.payment-method div {
-    display: inline-block;
+.payment-method {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#visa,
+#master-card,
+#paypal,
+#payu {
+    display: none;
 }
 
 
