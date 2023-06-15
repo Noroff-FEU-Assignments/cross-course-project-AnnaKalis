@@ -66,12 +66,17 @@ nav a {
     display: inline-block;
     padding: 30px;
     margin: 10px;
-
 }
 
 #menu-checkbox,
 .hamburger-icon {
     display: none;
+}
+
+nav a:hover,
+footer a:hover,
+.product-name:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -116,6 +121,7 @@ footer {
 footer a {
     grid-column: 1 / 2 ;
 }
+
 
 footer div img {
     display: inline-block;
@@ -256,6 +262,12 @@ footer div {
     padding: 10px 40px;
 }
 
+.welcome-womens-mens-cta:hover,
+.welcome-buy-now-cta:hover {
+    transform: scale(1.05);
+    background-color: #F5F5F5;
+}
+
 .featured h2 {
     display: inline-block;
     background-color: #F5F5F5;
@@ -286,6 +298,7 @@ footer div {
     object-fit: fill;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
  }
+
 
 
 /* Styling of jackets page
@@ -800,11 +813,11 @@ border-radius: 5px;
 
     nav {
         display:none;
-
     }
 
     #menu-checkbox:checked ~ nav {
         display: block;
+        justify-self: start;
     }
 
     nav a {
